@@ -1,0 +1,24 @@
+[project]
+name = "crowd-vision-poc-backend"
+version = "0.1.0"
+description = "POC backend for people/vehicle/attribute detection using YOLO26"
+requires-python = ">=3.11"
+dependencies = [
+    "fastapi==0.115.6",
+    "uvicorn[standard]==0.32.1",
+    "python-multipart==0.0.19",
+    "pydantic==2.10.3",
+    "pydantic-settings==2.6.1",
+    "ultralytics>=8.4.0",
+    "lap>=0.5.12",
+    "clip @ git+https://github.com/ultralytics/CLIP.git",
+    "opencv-python-headless==4.10.0.84",
+    "numpy==1.26.4",
+    "imageio-ffmpeg==0.5.1",
+    "python-dotenv==1.0.1",
+    "loguru==0.7.2",
+    "aiofiles==24.1.0",
+]
+
+[tool.uv]
+package = false
